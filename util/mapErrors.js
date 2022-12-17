@@ -1,9 +1,10 @@
 function mapErrors(err) {
-  if (err.name == "MongoServerError" && err.code == 11000) {
-    const key = Object.keys(err.keyValue)[0];
-    return { [key]: `This ${key} already exists!` };
+  // if (err.name == "MongoServerError" && err.code == 11000) {
+  //   const key = Object.keys(err.keyValue)[0];
+  //   return { [key]: `This ${key} already exists!` };
 
-  } else if (err.name == "ValidationError") {
+  // } else
+   if (err.name == "ValidationError") {
     return Object.values(err.errors).reduce(
       (acc, e) => ({ ...acc, [e.path]: e.message }),
       {}

@@ -5,8 +5,11 @@
       <h2>Welcome, again!</h2>
       <p>View new posts.</p>
     </div>
-    <form action="#" method="" class="loginForm">
+    <form action="/login" method="POST" class="loginForm">
       <h2>Login</h2>
+
+     
+
       <ul class="noBullet">
         <li>
           <label for="email">Email:</label>
@@ -14,20 +17,31 @@
             type="text"
             class="inputFields"
             id="email"
-            name=""
+            name="email"
+            value="{{user.email}}"
             placeholder="alex@gmail.com"
           />
         </li>
+
+        {{#if errors.email}}
+          <p class="error">{{errors.email}}</p>
+        {{/if}}
+
         <li>
           <label for="password">Password:</label>
           <input
             type="password"
             class="inputFields"
             id="password"
-            name=""
+            name="password"
+            value="{{user.password}}"
             placeholder="*******"
           />
         </li>
+
+        {{#if errors.password}}
+          <p class="error">{{errors.password}}</p>
+        {{/if}}
 
         <li id="center-btn">
           <button id="login-btn">Login</button>

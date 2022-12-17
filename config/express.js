@@ -3,8 +3,7 @@ const session = require("express-session");
 const hbs = require("express-handlebars");
 const userSession = require("../middleware/userSession");
 
-async function start() {
-  const app = express();
+async function start(app) {
 
   app.engine(
     "hbs",

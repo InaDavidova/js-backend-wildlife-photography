@@ -4,8 +4,15 @@
       <h2>To discover and share knowledge about the environment in order to
         preserve and enrich life.</h2>
     </div>
-    <form action="#" method="" class="signupForm">
+    <form action="/register" method="POST" class="signupForm">
       <h2>Sign Up</h2>
+
+      {{#if errors.general}}
+        <div class="error-container">
+          <p>{{errors.general}}</p>
+        </div>
+      {{/if}}
+
       <ul class="noBullet">
         <li>
           <label for="first-name">First Name:</label>
@@ -13,53 +20,80 @@
             type="text"
             class="inputFields"
             id="first-name"
-            name=""
-            value=""
+            name="firstName"
+            value="{{user.firstName}}"
             placeholder="Alex"
           />
         </li>
+
+        {{#if errors.firstName}}
+          <p class="error">{{errors.firstName}}</p>
+        {{/if}}
+
         <li>
           <label for="last-name">Last Name:</label>
           <input
             type="text"
             class="inputFields"
             id="last-name"
-            name=""
-            value=""
+            name="lastName"
+            value="{{user.lastName}}"
             placeholder="Petkov"
           />
         </li>
+
+        {{#if errors.lastName}}
+          <p class="error">{{errors.lastName}}</p>
+        {{/if}}
+
         <li>
           <label for="email">Email:</label>
           <input
             type="text"
             class="inputFields"
             id="email"
-            name=""
-            value=""
+            name="email"
+            value="{{user.email}}"
             placeholder="alex@gmail.com"
           />
         </li>
+
+        {{#if errors.email}}
+          <p class="error">{{errors.email}}</p>
+        {{/if}}
+
         <li>
           <label for="password">Password:</label>
           <input
             type="password"
             class="inputFields"
             id="password"
-            name=""
+            name="password"
+            value="{{user.password}}"
             placeholder="******"
           />
         </li>
+
+        {{#if errors.password}}
+          <p class="error">{{errors.password}}</p>
+        {{/if}}
+
         <li>
           <label for="repeat-password">Repeat-Password:</label>
           <input
             type="password"
             class="inputFields"
             id="repeat-password"
-            name=""
+            name="rePass"
+            value="{{user.rePass}}"
             placeholder="******"
           />
         </li>
+
+        {{#if errors.rePass}}
+          <p class="error">{{errors.rePass}}</p>
+        {{/if}}
+
         <li id="center-btn">
           <button id="join-btn">Join</button>
         </li>
