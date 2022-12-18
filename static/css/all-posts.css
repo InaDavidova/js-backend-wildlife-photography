@@ -16,6 +16,7 @@
         width: 98%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         box-shadow: 0 0px 81px #5b848a;
         background-color: #4d6d72;
         padding-top: 20px;
