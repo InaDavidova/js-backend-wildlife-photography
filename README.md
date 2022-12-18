@@ -6,3 +6,37 @@ This is a backend application built with **Express.js**, **Handelbars** and **Mo
 In order to start the project you need to run `npm install` and `npm run start`. After that you can open it on http://localhost:3000/ .
 
 If you face any troubles or would like to discuss the code please don't hesitate to contact me. I would also appreciate any feedback :)
+ 
+ ## Views:
+ 
+ ###Home page
+ 
+<img src="./static/img/readme/home.png"/>
+
+ ###Catalog page
+ 
+<img src="./static/img/readme/catalog.png"/>
+
+ ###Details page (when is owner's)
+ 
+<img src="./static/img/readme/details.png"/>
+
+ ###Details page (when is NOT owner's)
+ 
+<img src="./static/img/readme/details2.png"/>
+
+ ###Create page
+ 
+<img src="./static/img/readme/create.png"/>
+
+ ###Login page
+ 
+<img src="./static/img/readme/login.png"/>
+
+ ###Register page
+ 
+<img src="./static/img/readme/register.png"/>
+
+ ###My-posts page
+ 
+<img src="./static/img/readme/my-posts.png"/>
