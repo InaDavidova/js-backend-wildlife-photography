@@ -9,34 +9,34 @@ If you face any troubles or would like to discuss the code please don't hesitate
  
  ## Views:
  
- ###Home page
+ ### Home page
  
 <img src="./static/img/readme/home.png"/>
 
- ###Catalog page
+ ### Catalog page
  
 <img src="./static/img/readme/catalog.png"/>
 
- ###Details page (when is owner's)
+ ### Details page (when is owner's)
  
 <img src="./static/img/readme/details.png"/>
 
- ###Details page (when is NOT owner's)
+ ### Details page (when is NOT owner's)
  
 <img src="./static/img/readme/details2.png"/>
 
- ###Create page
+ ### Create page
  
 <img src="./static/img/readme/create.png"/>
 
- ###Login page
+ ### Login page
  
 <img src="./static/img/readme/login.png"/>
 
- ###Register page
+ ### Register page
  
 <img src="./static/img/readme/register.png"/>
 
- ###My-posts page
+ ### My-posts page
  
 <img src="./static/img/readme/my-posts.png"/>
