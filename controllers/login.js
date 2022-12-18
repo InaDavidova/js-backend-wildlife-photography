@@ -30,7 +30,7 @@ module.exports = {
       res.redirect("/");
     } catch (err) {
       const errors = mapErrors(err);
-      res.render("login", { errors, user: { email, password } });
+      res.render("login", { errors, user: { email, password }, title:"Login Page" });
     }
   },
 };

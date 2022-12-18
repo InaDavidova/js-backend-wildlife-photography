@@ -51,6 +51,7 @@ module.exports = {
       res.render("register", {
         errors,
         user: { firstName, lastName, email, password, rePass },
+        title:"Register Page"
       });
     }
   },

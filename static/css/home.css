@@ -89,20 +89,6 @@
     height: 100%;
 }
 
-
-/*
-.offers {
-    font-size: 0;
-}
-
-.container {
-    display: inline;
-    width: 600px;
-    margin-left: 2em;
-    border: 26px solid #364236;
-    height: 100%;
-}*/
-
 .container>img {
     display: inline-block;
     border: 15px solid rgb(253, 251, 251);

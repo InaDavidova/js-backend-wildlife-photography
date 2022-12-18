@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 require('../models/User');
+require('../models/Post');
 
 const dbName = "wildlife-photography";
 const connectionString = `mongodb://localhost:27017/${dbName}`;
