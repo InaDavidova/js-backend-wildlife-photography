@@ -30,7 +30,7 @@ module.exports = {
 
     try {
       await updatePost(id, post);
-      res.redirect("/");
+      res.redirect(`/details/${id}`);
     } catch (err) {
       const errors = mapErrors(err);
       console.log(err);
