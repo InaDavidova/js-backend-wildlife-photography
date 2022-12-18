@@ -5,7 +5,6 @@ module.exports = {
     const userId = req.session.user.id;
 
     const posts = await getUserPosts(userId);
-    console.log(posts);
     res.render("my-posts", { posts, title: "My Posts" });
   },
 };

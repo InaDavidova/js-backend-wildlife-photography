@@ -8,7 +8,7 @@ module.exports = {
   async post(req, res) {
     let { title, keyword, location, creationDate, imageUrl, description } = req.body;
     const ownerId = req.session.user.id;
-console.log(req.body);
+
     title = title.trim();
     keyword = keyword.trim();
     location = location.trim();
@@ -31,7 +31,6 @@ console.log(req.body);
       res.redirect("/");
     } catch (err) {
       const errors = mapErrors(err);
-      console.log(err);
       res.render("create", { title: "Create Post", errors, post });
     }
   },

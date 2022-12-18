@@ -33,7 +33,6 @@ module.exports = {
       res.redirect(`/details/${id}`);
     } catch (err) {
       const errors = mapErrors(err);
-      console.log(err);
       res.render("edit", { title: "Edit Post", errors, post });
     }
   },

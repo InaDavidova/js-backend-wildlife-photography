@@ -47,7 +47,6 @@ module.exports = {
       res.redirect("/");
     } catch (err) {
       const errors = mapErrors(err);
-      console.log(err);
       res.render("register", {
         errors,
         user: { firstName, lastName, email, password, rePass },
